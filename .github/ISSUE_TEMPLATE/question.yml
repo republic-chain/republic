@@ -1,0 +1,72 @@
+name: Question
+description: Ask a question about Republic
+title: "[QUESTION] "
+labels: ["question", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about Republic? We're here to help! Please provide as much context as possible.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What category does your question fall into?
+      options:
+        - General Usage
+        - Node Setup & Configuration
+        - Transaction & State Management
+        - Consensus & Networking
+        - Development & Integration
+        - Performance & Optimization
+        - Security
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: Please describe your question in detail...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide any relevant context, what you're trying to achieve, or what you've already tried.
+      placeholder: |
+        - What are you trying to build/achieve?
+        - What have you already tried?
+        - Any relevant configuration or setup details?
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: If relevant, please provide your environment details.
+      placeholder: |
+        - OS: Ubuntu 22.04
+        - Rust version: 1.70.0
+        - Republic version: v0.1.0
+        - Node configuration: ...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm you have done the following
+      options:
+        - label: I have searched existing issues and discussions
+          required: true
+        - label: I have checked the documentation
+          required: true
+        - label: I have provided sufficient context for my question
+          required: true

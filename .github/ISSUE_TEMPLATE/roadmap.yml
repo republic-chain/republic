@@ -1,0 +1,221 @@
+name: Roadmap Item
+description: Propose or track a major roadmap milestone for Republic
+title: "[ROADMAP] "
+labels: ["roadmap", "epic", "planning"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose or track major roadmap items and milestones for Republic. These are significant features or improvements that may span multiple releases.
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Development Phase
+      description: Which development phase does this roadmap item belong to?
+      options:
+        - Phase 0 - Design & Specification
+        - Phase 1 - Single-node Prototype
+        - Phase 2 - Multi-node Devnet
+        - Phase 3 - Hardening & Optimization
+        - Phase 4 - Governance & Tokenomics
+        - Phase 5 - Security Audit & Mainnet
+        - Future Phases
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Roadmap Category
+      description: What category does this roadmap item fall under?
+      options:
+        - Core Protocol
+        - Consensus Algorithm
+        - Governance System
+        - P2P Networking
+        - State Management
+        - Virtual Machine / Smart Contracts
+        - RPC / API Layer
+        - CLI Tools
+        - Developer Experience
+        - Security & Auditing
+        - Performance & Optimization
+        - Documentation
+        - Testing Infrastructure
+        - Deployment & Operations
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Roadmap Item Description
+      description: Provide a comprehensive description of this roadmap milestone.
+      placeholder: |
+        Describe the roadmap item in detail:
+        - What is being proposed?
+        - Why is this important for Republic?
+        - How does it fit into the overall vision?
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Success Criteria & Objectives
+      description: Define clear, measurable objectives for this roadmap item.
+      placeholder: |
+        List specific, measurable objectives:
+        - [ ] Objective 1
+        - [ ] Objective 2
+        - [ ] Objective 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Key Deliverables
+      description: What are the main deliverables for this roadmap item?
+      placeholder: |
+        - Implementation of X component
+        - Documentation for Y feature
+        - Test suite for Z functionality
+        - Performance benchmarks
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What other roadmap items, features, or external factors does this depend on?
+      placeholder: |
+        - Depends on completion of Issue #123
+        - Requires research into X technology
+        - Blocked by upstream library Y
+        - Prerequisites: ...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: What is the priority of this roadmap item?
+      options:
+        - Critical - Core functionality, blocking other work
+        - High - Important for phase completion
+        - Medium - Valuable addition, not blocking
+        - Low - Nice to have, future consideration
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated Effort
+      description: Rough estimate of the effort required for this roadmap item.
+      options:
+        - Small - 1-2 weeks
+        - Medium - 1-2 months
+        - Large - 3-6 months
+        - Epic - 6+ months or multi-phase
+    validations:
+      required: true
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Proposed Timeline
+      description: When should this roadmap item be started and completed?
+      placeholder: |
+        - Start: After completion of Phase X / Q1 2024
+        - Target completion: End of Phase Y / Q2 2024
+        - Key milestones: ...
+
+  - type: textarea
+    id: technical-approach
+    attributes:
+      label: Technical Approach
+      description: High-level technical approach or architecture considerations.
+      placeholder: |
+        - Technology choices (e.g., specific algorithms, libraries)
+        - Architecture decisions
+        - Integration points
+        - Performance considerations
+        - Security implications
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this roadmap item is complete and successful?
+      placeholder: |
+        - [ ] All objectives met
+        - [ ] Code review completed
+        - [ ] Tests passing with X% coverage
+        - [ ] Documentation complete
+        - [ ] Performance benchmarks met
+        - [ ] Security review completed
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Mitigation
+      description: Identify potential risks and mitigation strategies.
+      placeholder: |
+        Risk: Technical complexity may lead to delays
+        Mitigation: Break into smaller milestones, prototype early
+
+        Risk: Dependency on external library
+        Mitigation: Evaluate alternatives, contribute upstream
+
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: Stakeholders & Review
+      description: Who should be involved in planning, review, and approval of this roadmap item?
+      placeholder: |
+        - Technical Lead: @username
+        - Subject Matter Expert: @username
+        - Community Input: Required/Optional
+        - External Review: Required/Optional
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact Assessment
+      description: What is the expected impact of this roadmap item?
+      placeholder: |
+        User Impact:
+        - How will this benefit end users?
+
+        Developer Impact:
+        - How will this affect developers?
+
+        Network Impact:
+        - Performance, security, decentralization effects
+
+        Ecosystem Impact:
+        - How does this advance the Republic ecosystem?
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Roadmap Item Checklist
+      description: Please confirm the following
+      options:
+        - label: This aligns with Republic's core vision and constitutional principles
+          required: true
+        - label: I have considered dependencies and prerequisites
+          required: true
+        - label: Success criteria are clear and measurable
+          required: true
+        - label: I have assessed risks and mitigation strategies
+          required: true
+        - label: This roadmap item is appropriately scoped for its phase
+          required: true

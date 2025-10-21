@@ -1,0 +1,122 @@
+name: Feature Request
+description: Suggest an idea or enhancement for Republic
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a feature! Please provide as much detail as possible.
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature are you requesting?
+      options:
+        - Core Protocol Enhancement
+        - Consensus Algorithm Improvement
+        - Networking/P2P Feature
+        - RPC/API Enhancement
+        - CLI Tool Improvement
+        - Developer Experience
+        - Performance Optimization
+        - Security Enhancement
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe the problem or limitation you're experiencing.
+      placeholder: "I'm frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see implemented.
+      placeholder: "I would like to see..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Describe any alternative solutions or features you've considered.
+      placeholder: "Alternatively, we could..."
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific use cases where this feature would be beneficial.
+      placeholder: |
+        1. As a node operator, I need...
+        2. As a developer, I want to...
+        3. As a user, I expect...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Critical - Blocking development/usage
+        - High - Important for adoption
+        - Medium - Nice to have
+        - Low - Future consideration
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: How complex do you think this feature might be to implement?
+      options:
+        - Simple - Small change or addition
+        - Medium - Moderate development effort
+        - Complex - Significant architectural changes
+        - Unknown - Need more investigation
+
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical Details
+      description: Any technical specifications, APIs, or implementation details you have in mind.
+      placeholder: |
+        - API changes needed
+        - Configuration options
+        - Backward compatibility concerns
+        - Performance considerations
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, mockups, or examples about the feature request.
+      placeholder: Any additional information...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm you have done the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided clear use cases for this feature
+          required: true
+        - label: This feature aligns with the project's goals and scope
+          required: true
