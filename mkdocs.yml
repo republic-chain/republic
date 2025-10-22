@@ -1,0 +1,125 @@
+site_name: Republic Blockchain
+site_description: A Layer 3 blockchain implementing democratic governance principles inspired by constitutional frameworks
+site_author: Rohan Sen
+site_url: https://republic-chain.readthedocs.io/
+
+repo_name: republic-chain/republic
+repo_url: https://github.com/republic-chain/republic
+edit_uri: blob/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.select
+    - content.action.edit
+    - content.action.view
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: en
+  - git-revision-date-localized:
+      type: date
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: republic-chain
+      repo: republic
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/republic-chain
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/republic_chain
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  version:
+    provider: mike
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: getting-started/quickstart.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+  - Development:
+    - Contributing: development/contributing.md
+  - Research:
+    - Constitutional Blockchain Theory: research/theory.md
+    - Democratic Consensus: research/consensus.md
+    - Security Model: research/security.md
+  - Community:
+    - Code of Conduct: community/code-of-conduct.md
+    - Contributing Guidelines: community/contributing.md
+    - Roadmap: community/roadmap.md
+    - FAQ: community/faq.md
