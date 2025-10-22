@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+wheelhouse/
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+.Python
+
+# Test / coverage / caches
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.nosetests.xml
+nose2-junit.xml
+.pyre/
+.mypy_cache/
+.pytype/
+.cache/
+cython_debug/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment files
+.env
+.env.local
+
+# Rust
+# Compiled output
+/target/
+**/target/
+
+# Rust artifacts
+*.rlib
+*.rmeta
+*.d
+*.so
+*.dll
+*.exe
+
+# Optional: ignore Cargo.lock for libraries (uncomment if desired)
+# Cargo.lock
+
+# Editor / OS
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~
+.DS_Store
+Thumbs.db
