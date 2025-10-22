@@ -1,6 +1,6 @@
 # Republic Blockchain
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/republic-chain/republic/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/republic-chain/republic/blob/master/LICENSE)
 [![Rust](https://img.shields.io/badge/rust-1.70+-orange.svg)](https://www.rust-lang.org)
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://republic-chain.readthedocs.io/)
 

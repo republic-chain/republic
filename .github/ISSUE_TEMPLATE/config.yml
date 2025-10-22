@@ -4,7 +4,7 @@ contact_links:
     url: https://github.com/republic-chain/republic/discussions
     about: Ask questions, share ideas, and discuss with the community
   - name: 📖 Documentation
-    url: https://github.com/republic-chain/republic/blob/main/README.md
+    url: https://github.com/republic-chain/republic/blob/master/README.md
     about: Read the project documentation and technical specifications
   - name: 🔒 Security Issues
     url: mailto:security@republic-chain.org
